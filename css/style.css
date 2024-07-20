@@ -1,0 +1,17 @@
+.flipbook-container {
+    width: 500px; /* Sesuaikan lebar sesuai kebutuhan */
+    height: 300px; /* Sesuaikan tinggi sesuai kebutuhan */
+    margin: 0 auto; /* Posisikan di tengah */
+    position: relative; /* Diperlukan untuk animasi flip */
+    overflow: hidden; /* Sembunyikan halaman yang melampaui batas */
+}
+
+.flipbook-page {
+    width: 100%; /* Lebar halaman sama dengan wadah */
+    height: 100%; /* Tinggi halaman sama dengan wadah */
+    position: absolute; /* Diperlukan untuk animasi flip */
+    backface-visibility: hidden; /* Menyembunyikan bagian belakang halaman */
+    transition: transform 0.5s ease-in-out; /* Animasi flip halus */
+}
+
+/* Gaya tambahan untuk halaman depan, halaman belakang, dll. */
